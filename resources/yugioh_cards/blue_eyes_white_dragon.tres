@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="YugiohCard" load_steps=4 format=3 uid="uid://bl3jopdpxw3yb"]
+
+[ext_resource type="Texture2D" uid="uid://c1lampwqb0bc3" path="res://assets/yugiho_cardback.png" id="1_4rq8h"]
+[ext_resource type="Script" path="res://resources/yugioh_card.gd" id="1_hx02r"]
+[ext_resource type="Texture2D" uid="uid://dpx46erx4ef25" path="res://assets/blue_eyes_white_dragon.png" id="2_j6cyp"]
+
+[resource]
+script = ExtResource("1_hx02r")
+id = 1
+name = "Blue Eyes White Dragon"
+level = 1
+attack = 3000
+defense = 2500
+card_type = 0
+description = "Dragon re picante"
+state = 0
+back_card = ExtResource("1_4rq8h")
+front_card = ExtResource("2_j6cyp")

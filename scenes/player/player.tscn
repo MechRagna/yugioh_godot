@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxh0511bas0hj"]
+
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_fwf7n"]
+[ext_resource type="PackedScene" uid="uid://c828uvp4ulv1o" path="res://scenes/board/board.tscn" id="1_tvby6"]
+[ext_resource type="PackedScene" uid="uid://wi5c4qwrewd6" path="res://scenes/deck/deck.tscn" id="2_ofrvb"]
+[ext_resource type="PackedScene" uid="uid://dnbyel42q7ngw" path="res://scenes/hand/hand.tscn" id="3_qahlr"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_fwf7n")
+
+[node name="Board" parent="." instance=ExtResource("1_tvby6")]
+
+[node name="Deck" parent="." instance=ExtResource("2_ofrvb")]
+
+[node name="Hand" parent="." instance=ExtResource("3_qahlr")]
