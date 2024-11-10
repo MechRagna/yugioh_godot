@@ -1,12 +1,9 @@
 extends Node2D
 class_name Card
 
-@export var card: YugiohCard = load("res://resources/yugioh_cards/blue_eyes_white_dragon.tres")
-@onready var cardSprite: Sprite2D = $CardSprite
-@onready var cardAnimation: AnimationPlayer = $CardAnimation
-
-func _ready() -> void:
-	self.attack()
+@export var card: YugiohCard
+@onready var cardSprite: Sprite2D = $Container/CardSprite
+@onready var cardAnimation: AnimationPlayer = $Container/CardAnimation
 
 func attack() -> void:
 	print(card.attack)
