@@ -6,10 +6,10 @@ class_name Card
 @onready var cardAnimation: AnimationPlayer = $CardAnimation
 
 func _ready() -> void:
-	if card:
-		print(card.name)
+	self.attack()
 
 func attack() -> void:
+	print(card.attack)
 	card.switch_to_attack_mode(cardSprite, cardAnimation)
 
 func defense() -> void:
